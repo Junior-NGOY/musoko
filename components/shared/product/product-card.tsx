@@ -71,6 +71,26 @@ const ProductCard = ({
     </div>
   );
 
+  /*  const AddButton = () => (
+    <div className="w-full text-center">
+      <AddToCart
+        minimal
+        item={{
+          clientId: generateId(),
+          product: product._id,
+          size: product.sizes[0],
+          color: product.colors[0],
+          countInStock: product.countInStock,
+          name: product.name,
+          slug: product.slug,
+          category: product.category,
+          price: round2(product.price),
+          quantity: 1,
+          image: product.images[0]
+        }}
+      />
+    </div>
+  ); */
   return hideBorder ? (
     <div className="flex flex-col">
       <ProductImage />

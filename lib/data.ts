@@ -1,9 +1,9 @@
-//import { Data, IProductInput, IUserInput } from "@/types";
-//import { toSlug } from "./utils";
+import { Data, IProductInput, IUserInput } from "@/types";
+import { toSlug } from "./utils";
 //import bcrypt from "bcryptjs";
 //import { i18n } from '@/i18n-config'
 
-const users /* : IUserInput[] */ = [
+const users: IUserInput[] = [
   /*   {
     name: "John",
     email: "admin@example.com",
@@ -262,10 +262,10 @@ const users /* : IUserInput[] */ = [
   }
 ];
 
-const products /* : IProductInput[] */ = [
+const products: IProductInput[] = [
   {
     name: "Nike Mens Slim-fit Long-Sleeve T-Shirt",
-    //slug: toSlug("Nike Mens Slim-fit Long-Sleeve T-Shirt"),
+    slug: toSlug("Nike Mens Slim-fit Long-Sleeve T-Shirt"),
     category: "T-Shirts",
     images: ["/images/p11-1.jpg", "/images/p11-2.jpg"],
     tags: ["new-arrival"],
@@ -290,10 +290,10 @@ const products /* : IProductInput[] */ = [
     colors: ["Green", "Red", "Black"],
 
     reviews: []
-  }
-  /* {
+  },
+  {
     name: "Jerzees Long-Sleeve Heavyweight Blend T-Shirt",
-    //slug: toSlug("Jerzees Long-Sleeve Heavyweight Blend T-Shirt"),
+    slug: toSlug("Jerzees Long-Sleeve Heavyweight Blend T-Shirt"),
     category: "T-Shirts",
     images: [
       "/images/p12-1.jpg",
@@ -965,7 +965,7 @@ const products /* : IProductInput[] */ = [
     colors: ["Green", "Black", "Grey"],
 
     reviews: []
-  } */
+  }
 ];
 const reviews = [
   {
@@ -1060,7 +1060,7 @@ const reviews = [
   }
 ];
 
-const data /* : Data */ = {
+const data: Data = {
   users,
   products,
   reviews,

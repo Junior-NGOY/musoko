@@ -31,7 +31,7 @@ export type IProductInput = z.infer<typeof ProductInputSchema>;
 
 export type Data = {
   settings: ISettingInput[];
-  //webPages: IWebPageInput[];
+  webPages: IWebPageInput[];
   users: IUserInput[];
   products: IProductInput[];
   reviews: {

@@ -24,7 +24,7 @@ const main = async () => {
     });
     process.exit(0);
   } catch (error) {
-    console.error(error);
+    console.error("console...", error);
     throw new Error("Failed to seed database");
   }
 };

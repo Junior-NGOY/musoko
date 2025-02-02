@@ -1,9 +1,11 @@
-"use client";
+//"use client";
 import React from "react";
 
 import { Button } from "@/components/ui/button";
+import { getTranslations } from "next-intl/server";
 
-export default function NotFound() {
+export default async function NotFound() {
+  const t = await getTranslations();
   return (
     <div className="flex flex-col items-center justify-center min-h-screen ">
       <div className="p-6 rounded-lg shadow-md w-1/3 text-center">
@@ -12,7 +14,7 @@ export default function NotFound() {
         <Button
           variant="outline"
           className="mt-4 ml-2"
-          onClick={() => (window.location.href = "/")}
+          onClick={() => t((window.location.href = "/"))}
         >
           Back to home
         </Button>

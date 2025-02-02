@@ -28,7 +28,7 @@ export default function Footer() {
           <p> © 2000-2024, {APP_NAME}, Inc. or its affiliates</p>
         </div>
         <div className="mt-8 flex justify-center text-sm text-gray-400">
-          123, Main Street, Anytown, CA, Zip 12345 | +1 (123) 456-7890
+          24, Av. Dilolo, Q/Kalubwe, C/Lubumbashi, RDCongo | +243 (085) 322-2299
         </div>
       </div>
     </footer>

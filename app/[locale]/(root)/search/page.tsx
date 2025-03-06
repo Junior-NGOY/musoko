@@ -118,6 +118,7 @@ export default async function SearchPage(props: {
     sort,
   })
   const t = await getTranslations()
+  const tc = await getTranslations('Categories')
   return (
     <div>
       <div className='my-2 bg-card md:border-b  flex-between flex-col md:flex-row '>
@@ -184,7 +185,7 @@ export default async function SearchPage(props: {
                       className={`${c === category && 'text-primary'}`}
                       href={getFilterUrl({ category: c, params })}
                     >
-                      {c}
+                        {tc(c)}
                     </Link>
                   </li>
                 ))}

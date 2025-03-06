@@ -1,6 +1,6 @@
 "use client";
 import { cn, formatCurrency } from "@/lib/utils";
-
+import { useTranslations } from 'next-intl';
 const ProductPrice = ({
   price,
   className,
@@ -16,6 +16,7 @@ const ProductPrice = ({
   forListing?: boolean;
   plain?: boolean;
 }) => {
+  const t = useTranslations('Product');
   const discountPercent = Math.round(100 - (price / listPrice) * 100);
   const stringValue = price.toString();
   const [intValue, floatValue] = stringValue.includes(".")
@@ -34,10 +35,10 @@ const ProductPrice = ({
     <div className="space-y-2">
       <div className="flex justify-center items-center gap-2">
         <span className="bg-red-700 rounded-sm p-1 text-white text-sm font-semibold">
-          {discountPercent}% Off
+          {discountPercent}%  {t('Off')}
         </span>
         <span className="text-red-700 text-xs font-bold">
-          Limited time deal
+        {t('Limited time deal')}
         </span>
       </div>
       <div
@@ -49,7 +50,7 @@ const ProductPrice = ({
           <span className="text-xs align-super">{floatValue}</span>
         </div>
         <div className="text-muted-foreground text-xs py-2">
-          Was: <span className="line-through">{formatCurrency(listPrice)}</span>
+        {t('Was')}: <span className="line-through">{formatCurrency(listPrice)}</span>
         </div>
       </div>
     </div>
@@ -64,7 +65,7 @@ const ProductPrice = ({
         </div>
       </div>
       <div className="text-muted-foreground text-xs py-2">
-        List price:{" "}
+      {t('List price')}:{" "}
         <span className="line-through">{formatCurrency(listPrice)}</span>
       </div>
     </div>

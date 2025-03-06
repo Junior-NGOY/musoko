@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import ClientProviders from "@/components/shared/client-providers";
-//import { getDirection } from '@/i18n-config'
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -9,6 +8,12 @@ import { notFound } from "next/navigation";
 import { getSetting } from "@/lib/actions/setting.actions";
 import { cookies } from "next/headers";
 import { getDirection } from "@/i18n-Config";
+import { extractRouterConfig } from "uploadthing/server";
+import { ourFileRouter } from "../api/uploadthing/core";
+import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
+import { Toaster } from 'sonner';
+//import { ScrollingBanner } from "@/components/shared/scrolling-banner";
+import MarketingScroll from "@/components/shared/marketing-scroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,9 +67,27 @@ export default async function AppLayout({
       <body
         className={`min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <Toaster     />
+        <NextSSRPlugin
+          /**
+           * The `extractRouterConfig` will extract **only** the route configs
+           * from the router to prevent additional information from being
+           * leaked to the client. The data passed to the client is the same
+           * as if you were to fetch `/api/uploadthing` directly.
+           */
+          routerConfig={extractRouterConfig(ourFileRouter)}
+        />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ClientProviders setting={{ ...setting, currency }}>
+          <MarketingScroll />
+       {/*    <ScrollingBanner
+        message="achat en ligne livraison à domicile"
+        backgroundColor="bg-blue-600"
+        textColor="text-white"
+        speed="medium"
+      /> */}
             {children}
+            <Toaster richColors />
           </ClientProviders>
         </NextIntlClientProvider>
       </body>

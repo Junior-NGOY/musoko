@@ -50,7 +50,7 @@ const settingSchema = new Schema<ISetting>(
         }
       }
     ],
-    /*     availableLanguages: [
+       availableLanguages: [
       {
         name: {
           type: String,
@@ -59,7 +59,7 @@ const settingSchema = new Schema<ISetting>(
         },
         code: { type: String, required: true },
       },
-    ], */
+    ],  
     defaultLanguage: { type: String, required: true },
     availableCurrencies: [
       {

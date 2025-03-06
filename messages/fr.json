@@ -99,7 +99,10 @@
     "Loading": "Chargement...",
     "Rating": "Évaluation",
     "No reviews yet": "Pas encore d'avis",
-    "Submitting": "Envoi en cours..."
+    "Submitting": "Envoi en cours...",
+    "View Details": "Voir détails",
+    "Contact on WhatsApp": "Contacter sur WhatsApp",
+    "Contact Seller": "Contacter le vendeur"
   },
   "Cart": {
     "Shopping Cart": "Panier d'achat",
@@ -203,6 +206,97 @@
     "Total": "Total",
     "Status": "Statut",
     "Actions": "Actions",
-    "Details": "Détails"
+    "Details": "Détails",
+    "Category": "Catégorie",
+    "Select a category": "Sélectionner une catégorie",
+    "Search category": "Rechercher une catégorie...",
+    "No categories found": "Aucune catégorie trouvée"
+  },
+  "NotFound": {
+    "title": "Page Non Trouvée",
+    "description": "La ressource demandée n'a pas pu être trouvée",
+    "returnHome": "Retour à l'accueil"
+  },
+  "Categories": {
+    "Electronics": "Électronique",
+    "Smartphones": "Téléphones",
+    "Laptops": "Ordinateurs portables",
+    "Tablets": "Tablettes",
+    "Accessories": "Accessoires",
+    "Cameras": "Appareils photo",
+    
+    "Fashion": "Mode",
+    "Men": "Hommes",
+    "Women": "Femmes",
+    "Children": "Enfants",
+    "Shoes": "Chaussures",
+    "Bags": "Sacs",
+    "Jewelry": "Bijoux",
+    
+    "Home & Living": "Maison & Décoration",
+    "Furniture": "Meubles",
+    "Decor": "Décoration",
+    "Kitchen": "Cuisine",
+    "Bedding": "Literie",
+    "Lighting": "Éclairage",
+    
+    "Beauty & Health": "Beauté & Santé",
+    "Skincare": "Soins de la peau",
+    "Makeup": "Maquillage",
+    "Hair Care": "Soins capillaires",
+    "Fragrances": "Parfums",
+    "Personal Care": "Soins personnels",
+    
+    "Sports & Outdoor": "Sports & Plein air",
+    "Fitness": "Fitness",
+    "Outdoor Recreation": "Loisirs de plein air",
+    "Sports Equipment": "Équipement sportif",
+    "Athletic Clothing": "Vêtements de sport",
+    
+    "Books & Media": "Livres & Médias",
+    "Books": "Livres",
+    "Movies": "Films",
+    "Music": "Musique",
+    "Games": "Jeux",
+    
+    "Automotive": "Automobile",
+    "Car Parts": "Pièces auto",
+    "Car Electronics": "Électronique auto",
+    "Tools": "Outils",
+    
+    "Toys & Games": "Jouets & Jeux",
+    "Action Figures": "Figurines d'action",
+    "Board Games": "Jeux de société",
+    "Educational Toys": "Jouets éducatifs",
+    "Outdoor Toys": "Jouets d'extérieur",
+    
+    "Garden & Tools": "Jardin & Outils",
+    "Garden Tools": "Outils de jardin",
+    "Plants": "Plantes",
+    "Outdoor Furniture": "Mobilier d'extérieur",
+    "Power Tools": "Outils électriques",
+    
+    "Food & Beverages": "Alimentation & Boissons",
+    "Snacks": "Snacks",
+    "Beverages": "Boissons",
+    "Cooking Ingredients": "Ingrédients de cuisine",
+    "Health Foods": "Aliments santé"
+  },
+  "Price": {
+    "LowToHigh": "Prix : du plus bas au plus élevé",
+    "HighToLow": "Prix : du plus élevé au plus bas"
+  },
+"Sort": {
+    "SortBy": "Trier par",
+    "Featured": "En vedette",
+    "Newest": "Plus récent",
+    "Price: Low to High": "Prix croissant",
+    "Price: High to Low": "Prix décroissant",
+    "Customer Review": "Avis clients",
+    "price-low-to-high": "Prix croissant",
+    "price-high-to-low": "Prix décroissant",
+    "newest-arrivals": "Nouveautés",
+    "avg-customer-review": "Avis clients",
+    "best-selling": "Meilleures ventes"
   }
 }

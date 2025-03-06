@@ -4,12 +4,18 @@ import { useState } from "react";
 import Image from "next/image";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-export default function ProductGallery({ images }: { images: string[] }) {
+
+interface ProductGalleryProps {
+  images: string[];
+}
+export default function ProductGallery({ images }: ProductGalleryProps) {
   const [selectedImage, setSelectedImage] = useState(0);
+  const defaultImage = "/images/placeholder.jpg";
+  const validImages = images?.length > 0 ? images : [defaultImage];
   return (
     <div className="flex gap-2">
       <div className="flex flex-col gap-2 mt-8">
-        {images.map((image, index) => (
+        {validImages.map((image, index) => (
           <button
             key={index}
             onClick={() => {

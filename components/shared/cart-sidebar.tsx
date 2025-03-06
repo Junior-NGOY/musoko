@@ -18,7 +18,7 @@ import useSettingStore from "@/hooks/use-setting-store";
 import ProductPrice from "./product/product-price";
 import { useLocale, useTranslations } from "next-intl";
 import { getDirection } from "@/i18n-Config";
-//import { getDirection } from '@/i18n-config'
+
 
 export default function CartSidebar() {
   const {

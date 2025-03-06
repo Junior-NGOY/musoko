@@ -5,6 +5,7 @@ import Menu from '@/components/shared/header/menu'
 import { AdminNav } from './admin-nav'
 import { getSetting } from '@/lib/actions/setting.actions'
 
+
 export default async function AdminLayout({
   children,
 }: {
@@ -34,6 +35,7 @@ export default async function AdminLayout({
           </div>
         </div>
         <div className='flex-1 p-4'>{children}</div>
+        
       </div>
     </>
   )

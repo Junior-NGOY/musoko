@@ -277,9 +277,9 @@ export const SettingInputSchema = z.object({
     copyright: z.string().min(1, "Copyright is required"),
     address: z.string().min(1, "Address is required")
   }),
-  /*   availableLanguages: z
+  availableLanguages: z
     .array(SiteLanguageSchema)
-    .min(1, 'At least one language is required'), */
+    .min(1, 'At least one language is required'), 
 
   carousels: z
     .array(CarouselSchema)

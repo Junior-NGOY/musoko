@@ -99,7 +99,8 @@
     "Loading": "Loading...",
     "Rating": "Rating",
     "No reviews yet": "No reviews yet",
-    "Submitting": "Submitting..."
+    "Submitting": "Submitting...",
+    "Contact Seller": "Contact Seller"
   },
   "Cart": {
     "Shopping Cart": "Shopping Cart",
@@ -208,6 +209,93 @@
     "Total": "Total",
     "Status": "Status",
     "Actions": "Actions",
-    "Details": "Details"
+    "Details": "Details",
+    "Category": "Category",
+    "Select a category": "Select a category",
+    "Search category": "Search category...",
+    "No categories found": "No categories found"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Could not find requested resource",
+    "returnHome": "Return to Home"
+  },
+  "Categories": {
+    "Electronics": "Electronics",
+    "Smartphones": "Smartphones",
+    "Laptops": "Laptops",
+    "Tablets": "Tablets",
+    "Accessories": "Accessories",
+    "Cameras": "Cameras",
+    
+    "Fashion": "Fashion",
+    "Men": "Men",
+    "Women": "Women",
+    "Children": "Children",
+    "Shoes": "Shoes",
+    "Bags": "Bags",
+    "Jewelry": "Jewelry",
+    
+    "Home & Living": "Home & Living",
+    "Furniture": "Furniture",
+    "Decor": "Decor",
+    "Kitchen": "Kitchen",
+    "Bedding": "Bedding",
+    "Lighting": "Lighting",
+    
+    "Beauty & Health": "Beauty & Health",
+    "Skincare": "Skincare",
+    "Makeup": "Makeup",
+    "Hair Care": "Hair Care",
+    "Fragrances": "Fragrances",
+    "Personal Care": "Personal Care",
+    
+    "Sports & Outdoor": "Sports & Outdoor",
+    "Fitness": "Fitness",
+    "Outdoor Recreation": "Outdoor Recreation",
+    "Sports Equipment": "Sports Equipment",
+    "Athletic Clothing": "Athletic Clothing",
+    
+    "Books & Media": "Books & Media",
+    "Books": "Books",
+    "Movies": "Movies",
+    "Music": "Music",
+    "Games": "Games",
+    
+    "Automotive": "Automotive",
+    "Car Parts": "Car Parts",
+    "Car Electronics": "Car Electronics",
+    "Tools": "Tools",
+    
+    "Toys & Games": "Toys & Games",
+    "Action Figures": "Action Figures",
+    "Board Games": "Board Games",
+    "Educational Toys": "Educational Toys",
+    "Outdoor Toys": "Outdoor Toys",
+    
+    "Garden & Tools": "Garden & Tools",
+    "Garden Tools": "Garden Tools",
+    "Plants": "Plants",
+    "Outdoor Furniture": "Outdoor Furniture",
+    "Power Tools": "Power Tools",
+    
+    "Food & Beverages": "Food & Beverages",
+    "Snacks": "Snacks",
+    "Beverages": "Beverages",
+    "Cooking Ingredients": "Cooking Ingredients",
+    "Health Foods": "Health Foods"
+  },
+  "Sort": {
+    "Sort By": "Sort By",
+    "Featured": "Featured",
+    "Newest": "Newest",
+    "Price: Low to High": "Price: Low to High",
+    "Price: High to Low": "Price: High to Low",
+    "Customer Review": "Customer Review",
+    "price-low-to-high": "Price: Low to High",
+    "price-high-to-low": "Price: High to Low",
+    "newest-arrivals": "Newest Arrivals",
+    "avg-customer-review": "Customer Review",
+    "best-selling": "Best Selling"
   }
 }

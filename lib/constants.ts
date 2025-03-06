@@ -60,3 +60,45 @@ export const AVAILABLE_DELIVERY_DATES = [
     freeShippingMinPrice: 35
   }
 ];
+export const categories = [
+  {
+    name: "Electronics",
+    subcategories: ["Smartphones", "Laptops", "Tablets", "Accessories", "Cameras"]
+  },
+  {
+    name: "Fashion",
+    subcategories: ["Men", "Women", "Children", "Shoes", "Bags", "Jewelry"]
+  },
+  {
+    name: "Home & Living",
+    subcategories: ["Furniture", "Decor", "Kitchen", "Bedding", "Lighting"]
+  },
+  {
+    name: "Beauty & Health",
+    subcategories: ["Skincare", "Makeup", "Hair Care", "Fragrances", "Personal Care"]
+  },
+  {
+    name: "Sports & Outdoor",
+    subcategories: ["Fitness", "Outdoor Recreation", "Sports Equipment", "Athletic Clothing"]
+  },
+  {
+    name: "Books & Media",
+    subcategories: ["Books", "Movies", "Music", "Games"]
+  },
+  {
+    name: "Automotive",
+    subcategories: ["Car Parts", "Car Electronics", "Tools", "Accessories"]
+  },
+  {
+    name: "Toys & Games",
+    subcategories: ["Action Figures", "Board Games", "Educational Toys", "Outdoor Toys"]
+  },
+  {
+    name: "Garden & Tools",
+    subcategories: ["Garden Tools", "Plants", "Outdoor Furniture", "Power Tools"]
+  },
+  {
+    name: "Food & Beverages",
+    subcategories: ["Snacks", "Beverages", "Cooking Ingredients", "Health Foods"]
+  }
+];

@@ -73,6 +73,97 @@ body {
 }
 
 @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-marquee {
+    animation-name: marquee;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .marketing-scroll {
+    @apply bg-gradient-to-r from-green-600 to-green-700 text-white py-2 font-medium;
+    width: 100%;
+  }
+  .marketing-scroll-content {
+    @apply inline-flex whitespace-nowrap;
+    /* Dupliquer le contenu pour un défilement continu */
+    padding-right: 50px;
+  }
+  .whatsapp-number {
+    @apply font-bold text-white underline mx-2 inline-flex items-center;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  /* Nouvelle classe pour le conteneur */
+  .scroll-container {
+    @apply overflow-hidden relative;
+    width: 100%;
+  }
+  /* .animate-scroll-slow {
+    animation: scroll 150s linear infinite;
+  } */
+
+  /* Ajustement des vitesses d'animation selon la taille d'écran */
+ /*  .animate-scroll {
+    animation: scroll linear infinite;
+  } */
+
+ /* Animation de base pour mobile */
+ .animate-scroll {
+  display: inline-block;
+  animation: scroll linear infinite;
+  animation-duration: 30s; /* Plus lent sur mobile */
+  padding-left: 100%;
+  will-change: transform;
+}
+
+  /* Media queries avec des durées ajustées */
+  @media (min-width: 768px) {
+    .animate-scroll {
+      animation-duration: 35s;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .animate-scroll {
+      animation-duration: 40s;
+    }
+  }
+
+  /* Grand écran */
+  @media (min-width: 1280px) {
+    .animate-scroll {
+      animation-duration: 40s;
+    }
+  }
+
+   /* Pause réelle sur le survol */
+   .animate-scroll:hover {
+    animation-play-state: paused !important;
+  }
+ .animate-scroll-medium {
+    animation: scroll 100s linear infinite;
+  } 
+ /* 
+  .animate-scroll-fast {
+    animation: scroll 10s linear infinite;
+  } */
   .web-page-content p {
     @apply py-2;
   }
@@ -94,5 +185,14 @@ body {
   }
   .flex-between {
     @apply flex justify-between items-center;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

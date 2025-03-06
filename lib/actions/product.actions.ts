@@ -131,7 +131,7 @@ export async function getProductsForCard({
   tag,
   limit = 4,
 }: {
-  tag: string
+  tag?: string
   limit?: number
 }) {
   await connectToDatabase()

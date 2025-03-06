@@ -15,6 +15,7 @@ import { getTranslations } from 'next-intl/server'
 
 export default async function HomePage() {
   const t = await getTranslations('Home')
+ // const tc = await getTranslations('Categories') // Ajout des traductions pour les catégories
   const { carousels } = await getSetting()
   const todaysDeals = await getProductsByTag({ tag: 'todays-deal' })
   const bestSellingProducts = await getProductsByTag({ tag: 'best-seller' })
@@ -39,6 +40,7 @@ export default async function HomePage() {
       items: categories.map((category) => ({
         name: category,
         image: `/images/${toSlug(category)}.jpg`,
+        //image: `/images/${toSlug(category)}.avif`,
         href: `/search?category=${category}`,
       })),
     },

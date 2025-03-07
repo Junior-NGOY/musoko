@@ -1068,11 +1068,9 @@ const data: Data = {
     {
       title: "About Us",
       slug: "about-us",
-      content: `Welcome to Musoko, your trusted destination for quality products and exceptional service. Our journey began with a mission to bring you the best shopping experience by offering a wide range of products at competitive prices, all in one convenient platform.
-
-At Musoko, we prioritize customer satisfaction and innovation. Our team works tirelessly to curate a diverse selection of items, from everyday essentials to exclusive deals, ensuring there's something for everyone. We also strive to make your shopping experience seamless with fast shipping, secure payments, and excellent customer support.
-
-As we continue to grow, our commitment to quality and service remains unwavering. Thank you for choosing [Your Store Name]—we look forward to being a part of your journey and delivering value every step of the way.`,
+      content: `Bienvenue à votre plateforme d'achat en ligne **MUSOKO**, votre destination de confiance pour des produits de qualité et un service exceptionnel. Notre parcours a commencé avec la mission de vous offrir la meilleure expérience d'achat en vous proposant une large gamme de produits à des prix compétitifs, le tout sur une plateforme pratique.
+Chez **MUSOKO**, nous donnons la priorité à la satisfaction du client et à l'innovation. Notre équipe travaille sans relâche pour proposer une sélection variée d'articles, des produits essentiels au quotidien aux offres exclusives, afin que chacun y trouve son compte. Nous nous efforçons également de rendre votre expérience d'achat transparente grâce à des livraisons rapides, des paiements sécurisés à la livraison et une excellente assistance à la clientèle.
+Alors que nous continuons à nous développer, notre engagement en matière de qualité et de service reste inébranlable. Nous vous remercions d'avoir choisi **MUSOKO** - nous sommes impatients de faire partie de votre voyage et de vous offrir de la valeur à chaque étape.`,
       isPublished: true
     },
     {
@@ -1098,26 +1096,23 @@ We look forward to assisting you! Your satisfaction is our priority.
     {
       title: "Help",
       slug: "help",
-      content: `Welcome to our Help Center! We're here to assist you with any questions or concerns you may have while shopping with us. Whether you need help with orders, account management, or product inquiries, this page provides all the information you need to navigate our platform with ease.
+      content: `Bienvenue dans notre centre d'aide ! Nous sommes là pour vous aider à répondre à toutes les questions que vous vous posez lorsque vous faites des achats chez nous. Que vous ayez besoin d'aide pour passer une commande, gérer votre compte ou demander des informations sur un produit, cette page vous fournit toutes les informations dont vous avez besoin pour naviguer facilement sur notre plateforme.
 
-**Placing and Managing Orders**
-Placing an order is simple and secure. Browse our product categories, add items to your cart, and proceed to checkout. Once your order is placed, you can track its status through your account under the "My Orders" section. If you need to modify or cancel your order, please contact us as soon as possible for assistance.
+**Passer et gérer les commandes** Passer une commande est simple et sûr. Parcourez nos catégories de produits, cliquez sur un produit pour avoir plus de détails sur le prix et la valeur du produit. Cliquez sur le boutton contactez le vendeur cette opération va vous rediriger vers le compte whatsapp du vendeur ce dernier viendra vous livrer à votre porte,  
 
-**Shipping and Returns**
-We offer a variety of shipping options to suit your needs, including standard and express delivery. For detailed shipping costs and delivery timelines, visit our Shipping Policy page. If you're not satisfied with your purchase, our hassle-free return process allows you to initiate a return within the specified timeframe. Check our Returns Policy for more details.
+**Expédition et retours** Nous proposons diverses options d'expédition pour répondre à vos besoins, y compris la livraison gratuite et la livraison payante selon les distances. Pour connaître le détail des frais d'expédition et des délais de livraison, consultez notre page « Politique d'expédition ». Si vous n'êtes pas satisfait de votre achat, notre procédure de retour sans problème vous permet d'effectuer un retour dans les délais impartis. Consultez notre politique de retour pour plus de détails.
 
-**Account and Support**
-Managing your account is easy. Log in to update your personal information, payment methods, and saved addresses. If you encounter any issues or need further assistance, our customer support team is available via email, live chat, or phone. Visit our Contact Us page for support hours and contact details.`,
+**Compte et assistance** La gestion de votre compte est simple. Connectez-vous pour mettre à jour vos informations personnelles, vos méthodes de paiement et vos adresses enregistrées. Si vous rencontrez des problèmes ou si vous avez besoin d'aide, notre équipe d'assistance à la clientèle est disponible par courrier électronique, par chat en direct ou par téléphone. Consultez notre page Contactez-nous pour connaître les heures d'ouverture du service d'assistance et les coordonnées des personnes à contacter.`,
       isPublished: true
     },
     {
       title: "Privacy Policy",
       slug: "privacy-policy",
-      content: `We value your privacy and are committed to protecting your personal information. This Privacy Notice explains how we collect, use, and share your data when you interact with our services. By using our platform, you consent to the practices described herein.
+      content: `Nous accordons de l'importance à votre vie privée et nous nous engageons à protéger vos informations personnelles. Le présent avis de confidentialité explique comment nous collectons, utilisons et partageons vos données lorsque vous interagissez avec nos services. En utilisant notre plateforme, vous acceptez les pratiques décrites ici.
 
-We collect data such as your name, email address, and payment details to provide you with tailored services and improve your experience. This information may also be used for marketing purposes, but only with your consent. Additionally, we may share your data with trusted third-party providers to facilitate transactions or deliver products.
+Nous collectons des données telles que votre nom, votre adresse électronique et vos informations de paiement afin de vous fournir des services personnalisés et d'améliorer votre expérience. Ces informations peuvent également être utilisées à des fins de marketing, mais uniquement avec votre consentement. En outre, nous pouvons partager vos données avec des fournisseurs tiers de confiance pour faciliter les transactions ou livrer des produits.
 
-Your data is safeguarded through robust security measures to prevent unauthorized access. However, you have the right to access, correct, or delete your personal information at any time. For inquiries or concerns regarding your privacy, please contact our support team.`,
+Vos données sont protégées par des mesures de sécurité solides afin d'empêcher tout accès non autorisé. Toutefois, vous avez le droit d'accéder à vos informations personnelles, de les corriger ou de les supprimer à tout moment. Pour toute question concernant la protection de votre vie privée, veuillez contacter notre équipe d'assistance.`,
       isPublished: true
     },
     {
@@ -1132,14 +1127,14 @@ We strive to ensure all product descriptions, pricing, and availability informat
     {
       title: "Customer Service",
       slug: "customer-service",
-      content: `At [Your Store Name], our customer service team is here to ensure you have the best shopping experience. Whether you need assistance with orders, product details, or returns, we are committed to providing prompt and helpful support.
+      content: `Chez **MUSOKO**, notre équipe de service à la clientèle est là pour vous garantir la meilleure expérience d'achat. Que vous ayez besoin d'aide pour passer une commande, obtenir des détails sur un produit ou retourner un article, nous nous engageons à vous fournir une assistance rapide et utile.
 
-If you have questions or concerns, please reach out to us through our multiple contact options:
-- **Email:** ngoylunda@gmail.com
-- **Phone:** +243 (082) 144-9396
-- **Live Chat:** Available on our website for instant assistance
+Si vous avez des questions ou des préoccupations, n'hésitez pas à nous contacter par le biais de nos multiples options de contact :
 
-We also provide helpful resources such as order tracking, product guides, and FAQs to assist you with common inquiries. Your satisfaction is our priority, and we’re here to resolve any issues quickly and efficiently. Thank you for choosing us!`,
+Courriel : ngoylunda@gmail.com
+Téléphone : (Whatsapp) +243 (085) 322-2299
+Chat en direct : sera disponible sur notre site web pour une assistance instantanée
+Nous mettons également à votre disposition des ressources utiles telles que le suivi des commandes, des guides de produits et des FAQ pour vous aider à répondre aux questions les plus courantes. Votre satisfaction est notre priorité, et nous sommes là pour résoudre tout problème rapidement et efficacement. Merci de nous avoir choisis !`,
       isPublished: true
     },
     {
@@ -1223,22 +1218,22 @@ We also provide helpful resources such as order tracking, product guides, and FA
     {
       title: "Most Popular Shoes For Sale",
       buttonCaption: "Shop Now",
-      image: "/images/banner3.jpg",
-      url: "/search?category=Shoes",
+      image: "/images/Sac.avif",
+      url: "/search?category=Electronics",
       isPublished: true
     },
     {
       title: "Best Sellers in T-Shirts",
       buttonCaption: "Shop Now",
-      image: "/images/banner1.jpg",
-      url: "/search?category=T-Shirts",
+      image: "/images/Souris.avif",
+      url: "/search?category=Tools",
       isPublished: true
     },
     {
       title: "Best Deals on Wrist Watches",
       buttonCaption: "See More",
-      image: "/images/banner2.jpg",
-      url: "/search?category=Wrist Watches",
+      image: "/images/Ardroise1.jpg",
+      url: "/search?category=Fashion",
       isPublished: true
     }
   ],
@@ -1259,8 +1254,8 @@ We also provide helpful resources such as order tracking, product guides, and FA
         url: "https://next-mongo-ecommerce-final.vercel.app",
         logo: "/icons/logo.svg",
         slogan: "Spend less, enjoy more.",
-        author: "Next Ecommerce",
-        copyright: "2025, Next-Ecommerce.com, Inc. or its affiliates",
+        author: "PowerSoft",
+        copyright: "2025,  Inc. or its affiliates",
         email: "admin@example.com",
         address: "24, Av. Dilolo, Q/Kalubwe, C/Lubumbashi, RDCongo",
         phone: "+243 (085) 322-2299"
@@ -1269,20 +1264,20 @@ We also provide helpful resources such as order tracking, product guides, and FA
         {
           title: "Most Popular Shoes For Sale",
           buttonCaption: "Shop Now",
-          image: "/images/banner3.jpg",
-          url: "/search?category=Shoes"
+          image: "/images/Sac.avif",
+          url: "/search?category=Electronics"
         },
         {
           title: "Best Sellers in T-Shirts",
           buttonCaption: "Shop Now",
-          image: "/images/banner1.jpg",
-          url: "/search?category=T-Shirts"
+          image: "/images/Souris.avif",
+          url: "/search?category=Tools"
         },
         {
           title: "Best Deals on Wrist Watches",
           buttonCaption: "See More",
-          image: "/images/banner2.jpg",
-          url: "/search?category=Wrist Watches"
+          image: "/images/Ardroise1.jpg",
+          url: "/search?category=Fashion"
         }
       ],
       availableLanguages: i18n.locales.map((locale) => ({
@@ -1298,7 +1293,8 @@ We also provide helpful resources such as order tracking, product guides, and FA
           convertRate: 1
         },
         { name: "Euro", code: "EUR", symbol: "€", convertRate: 0.96 },
-        { name: "UAE Dirham", code: "AED", symbol: "AED", convertRate: 3.67 }
+        { name: "Franc Congolais", code: "CDF", symbol: "FC", convertRate: 2850 }
+       /*  { name: "UAE Dirham", code: "AED", symbol: "AED", convertRate: 3.67 } */
       ],
       defaultCurrency: "USD",
       availablePaymentMethods: [

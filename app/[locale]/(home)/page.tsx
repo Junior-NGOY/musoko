@@ -7,10 +7,11 @@ import { Card, CardContent } from '@/components/ui/card'
 import {
   getProductsForCard,
   getProductsByTag,
-  getAllCategories,
+  //getAllCategories,
+  getProductsByCategoryForCard,
 } from '@/lib/actions/product.actions'
 import { getSetting } from '@/lib/actions/setting.actions'
-import { toSlug } from '@/lib/utils'
+//import { toSlug } from '@/lib/utils'
 import { getTranslations } from 'next-intl/server'
 
 export default async function HomePage() {
@@ -20,7 +21,15 @@ export default async function HomePage() {
   const todaysDeals = await getProductsByTag({ tag: 'todays-deal' })
   const bestSellingProducts = await getProductsByTag({ tag: 'best-seller' })
 
-  const categories = (await getAllCategories()).slice(0, 4)
+  interface CategoryItem {
+    name: string;
+    category: string;
+    image: string;
+    href: string;
+  }
+
+  const categories =await getProductsByCategoryForCard()
+ 
   const newArrivals = await getProductsForCard({
     tag: 'new-arrival',
   })
@@ -37,11 +46,10 @@ export default async function HomePage() {
         text: t('See More'),
         href: '/search',
       },
-      items: categories.map((category) => ({
-        name: category,
-        image: `/images/${toSlug(category)}.jpg`,
-        //image: `/images/${toSlug(category)}.avif`,
-        href: `/search?category=${category}`,
+      items: categories.map((item:CategoryItem) => ({
+        name: item.name || item.category, // Utiliser le nom de la catégorie
+        image: item.image || '/images/default-product.jpg' , // Utiliser l'image déjà formatée
+        href: item.href || `/search?category=${item.category}`, 
       })),
     },
     {
@@ -57,7 +65,7 @@ export default async function HomePage() {
       items: bestSellers,
       link: {
         text: t('View All'),
-        href: '/search?tag=new-arrival',
+        href: '/search?tag=best-seller',
       },
     },
     {
@@ -65,7 +73,7 @@ export default async function HomePage() {
       items: featureds,
       link: {
         text: t('Shop Now'),
-        href: '/search?tag=new-arrival',
+        href: '/search?tag=featured',
       },
     },
   ]

@@ -297,5 +297,16 @@
     "newest-arrivals": "Newest Arrivals",
     "avg-customer-review": "Customer Review",
     "best-selling": "Best Selling"
+  },
+  "Carousel": {
+    "Previous": "Previous",
+    "Next": "Next",
+    "NewArrivals": "New Arrivals",
+    "BestSellers": "Best Sellers",
+    "Shop Now": "Shop Now",
+    "See More": "See More",
+    "Most Popular Shoes For Sale": "Most Popular Shoes For Sale",
+    "Best Sellers in T-Shirts": "Best Sellers in T-Shirts",
+    "Best Deals on Wrist Watches": "Best Deals on Wrist Watches"
   }
 }

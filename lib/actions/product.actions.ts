@@ -323,3 +323,39 @@ export async function getAllTags() {
       ) as string[]) || []
   )
 }
+
+export async function getProductsByCategoryForCard(limit = 4) {
+  await connectToDatabase();
+
+  // Utiliser l'agrégation MongoDB pour obtenir un produit par catégorie
+  const products = await Product.aggregate([
+    // Filtrer les produits publiés
+    { $match: { isPublished: true } },
+    
+    // Grouper par catégorie et prendre le premier produit de chaque groupe
+    {
+      $group: {
+        _id: "$category",
+        name: { $first: "$name" },
+        slug: { $first: "$slug" },
+        image: { $first: { $arrayElemAt: ["$images", 0] } }
+      }
+    },
+    
+    // Limiter le nombre de résultats
+    { $limit: limit },
+    
+    // Formater la sortie
+    {
+      $project: {
+        _id: 0,
+        name: 1,
+        category: "$_id",
+        href: { $concat: ["/search?category=", "$_id"] },
+        image: { $ifNull: ["$image", "/images/default-product.jpg"] }
+      }
+    }
+  ]);
+
+  return JSON.parse(JSON.stringify(products));
+}
